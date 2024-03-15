@@ -19,7 +19,8 @@ def main(args):
     pic_path = args.source_video
     audio_path = args.driven_audio
     enhancer_region = args.enhancer
-    save_dir = os.path.join(args.result_dir, strftime("%Y_%m_%d_%H.%M.%S"))
+    save_dir = os.path.join(args.result_dir, "lipsync")
+    #save_dir = os.path.join(args.result_dir, strftime("%Y_%m_%d_%H.%M.%S"))
     os.makedirs(save_dir, exist_ok=True)
     device = args.device
     batch_size = args.batch_size
